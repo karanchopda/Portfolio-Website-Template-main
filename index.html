@@ -26,6 +26,14 @@
 
 
 	<style>
+		html {
+			overflow-x: hidden !important;
+		}
+
+		body {
+			overflow-x: hidden !important;
+		}
+
 		/*======================================
 //--//-->   ABOUT
 ======================================*/
@@ -112,6 +120,13 @@
 		}
 	</style>
 
+	<script>
+		function closeButton() {
+			var element = document.getElementById("ftco-nav");
+			element.classList.remove("show");
+		}
+	</script>
+
 
 </head>
 
@@ -128,11 +143,15 @@
 
 			<div class="collapse navbar-collapse" id="ftco-nav">
 				<ul class="navbar-nav nav ml-auto">
-					<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About Me</span></a></li>
-					<li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+					<li class="nav-item" onclick="closeButton()"><a href="#home-section"
+							class="nav-link"><span>Home</span></a></li>
+					<li class="nav-item" onclick="closeButton()"><a href="#about-section" class="nav-link"><span>About
+								Me</span></a></li>
+					<li class="nav-item" onclick="closeButton()"><a href="#resume-section"
+							class="nav-link"><span>Resume</span></a></li>
 					<!-- <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li> -->
-					<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+					<li class="nav-item" onclick="closeButton()"><a href="#contact-section"
+							class="nav-link"><span>Contact</span></a></li>
 				</ul>
 			</div>
 		</div>
@@ -699,6 +718,8 @@
 	<script src="js/scrollax.min.js"></script>
 
 	<script src="js/main.js"></script>
+
+
 
 </body>
 
