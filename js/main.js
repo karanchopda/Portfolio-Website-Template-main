@@ -81,7 +81,7 @@ AOS.init({
 
 	};
 
-	onePageClick();
+	// onePageClick();
 
 
 	var carousel = function () {
